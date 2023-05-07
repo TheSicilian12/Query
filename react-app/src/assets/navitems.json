@@ -1,0 +1,26 @@
+[
+    {
+        "text":"Logo",
+        "url":"/sandbox"
+    }, 
+    {
+        "text":"Home",
+        "url":"/"
+    }, 
+    {
+        "text":"Following",
+        "url":"/following"
+    }, 
+    {
+        "text":"Answer",
+        "url":"/answer"
+    }, 
+    {
+        "text":"Spaces",
+        "url":"/spaces"
+    }, 
+    {
+        "text":"Notifications",
+        "url":"/notifications"
+    }
+]

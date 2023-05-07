@@ -1,0 +1,11 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.footer > *{
+    padding: 1rem;
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+}

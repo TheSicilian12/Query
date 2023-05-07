@@ -1,0 +1,8 @@
+.space-cards-container{
+    display: flex;
+    max-width: 20vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-radius: .23rem;
+}

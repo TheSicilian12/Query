@@ -1,0 +1,10 @@
+.main-content-section{
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+.main-content-area{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}

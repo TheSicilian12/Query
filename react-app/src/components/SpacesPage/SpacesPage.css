@@ -1,0 +1,30 @@
+.spaces-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.space-card-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 40vw;
+}
+.view-more{
+    width: 40vw;
+    padding: 1rem;
+    background-color: white;
+    border: none;
+}
+.view-more:hover{
+    background-color: rgba(220, 220, 220, 0.205);
+    border-radius: .23rem;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.spaces-buttons{
+    display: flex;
+}
+.spaces-image{
+    display: flex;
+    justify-content: flex-end;
+}

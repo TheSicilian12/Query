@@ -1,0 +1,25 @@
+.conditional-card-container{
+    display: flex;
+    justify-content: center;
+}
+.conditional-card{
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 3rem;
+    margin: .5rem;
+}
+.conditional-img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.conditional-text{
+    padding: .5rem;
+}
+.conditional-text > *{
+    padding: .5rem;
+}

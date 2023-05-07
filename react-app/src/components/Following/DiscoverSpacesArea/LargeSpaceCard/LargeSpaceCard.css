@@ -1,0 +1,31 @@
+.large-space-card-container{
+    display: flex;
+    justify-content: left;
+}
+.large-space-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    margin: .5rem;
+}
+.large-space-card:hover{
+    background-color: rgba(220, 220, 220, 0.205);
+    border-radius: .23rem;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.large-space-image{
+    padding-left: 1rem;
+    padding-right:1rem;
+}
+.large-spce-img{
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+    border-radius: 10%;
+}
+.large-space-text{
+    padding-left: 1rem;
+    padding-right:1rem;
+}

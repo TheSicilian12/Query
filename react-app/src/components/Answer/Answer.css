@@ -1,0 +1,12 @@
+.mailbox{
+    width: 4rem;
+}
+#mailbox-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: .5rem;
+    align-items: center;
+    text-align: center;
+    /* width: 10vw; */
+}

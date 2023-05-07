@@ -1,0 +1,75 @@
+.profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-divider{
+    display: flex;
+    align-items: center;
+    padding-right: .7rem;
+    text-align: center;
+}
+.dot-button{
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    text-align: center;
+}
+.profile-info{
+    padding: 0;
+    margin: 0;
+}
+#dot{
+    font-size: .2rem;
+    padding: 0;
+}
+.profile-img{
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    padding: .5rem;
+}
+.profile-img:hover{
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.profile-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.two{
+    color: grey;
+}
+.profile-name{
+    padding: 0;
+    padding-right: .5rem;
+    margin: 0;
+    font-size: 1.4rem
+} 
+.follow-button{
+    border: none;
+    background-color: white;
+    color: rgb(0, 183, 255);
+    font-weight:770;
+}
+.follow-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.profile-title{
+    padding: 0;
+    padding-right: .5rem;
+    margin: 0;
+    font-size:.7rem
+}
+.age-button{
+    border: none;
+    background-color: white;
+    font-weight: 700;
+    color: grey;
+}
+.age-button:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

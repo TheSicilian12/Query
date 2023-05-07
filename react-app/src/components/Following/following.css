@@ -1,0 +1,36 @@
+.following-parent-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    /* display: grid;
+    grid-template-areas: 
+        "a a"
+        "b c"
+    ;
+    grid-template-columns: 1fr; */
+}
+.conditional-card-container{
+    width: 100vw;
+}
+.following-parent-container{
+    width: 50vw;
+}
+.following-container{
+    grid-area: "b";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.discover-spaces-container{
+    grid-area: "c";
+}
+.following-sub-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+.discover-space-container{
+    display: flex;
+    justify-content: flex-end;
+}

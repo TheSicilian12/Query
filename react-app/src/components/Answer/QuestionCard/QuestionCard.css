@@ -1,0 +1,17 @@
+.question-card-container{
+    display: flex;
+    flex-direction: column;
+    border-bottom: .1rem solid black;
+}
+.bottom-buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-buttons-left{
+    max-width: 50%;
+    display: flex;
+}
+.bottom-buttons-right{
+    max-width: 50%;
+}
