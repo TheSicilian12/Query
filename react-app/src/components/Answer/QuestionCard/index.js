@@ -1,11 +1,11 @@
 import './QuestionCard.css'
 
 
-const QuestionCard = ({title, image, message}) => {
+const QuestionCard = ({question}) => {
 
     return(
         <div className="question-card-container">
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, laudantium.</h2>
+            <h2>{question.details}</h2>
             <button className="answer-button">
                 Number of answers
             </button>
@@ -30,6 +30,7 @@ const QuestionCard = ({title, image, message}) => {
                     </button>
                 </div>
             </div>
+            <hr />
         </div>
     )
 

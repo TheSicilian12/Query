@@ -8,6 +8,7 @@ import MainContent from "./components/MainContent";
 import SingleQuestion from "./components/SingleQuestion";
 import NavBar from "./components/NavBar";
 import ProfilePage from "./components/ProfilePage";
+import Answer from "./components/Answer";
 
 function App() {
   const dispatch = useDispatch();
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/signup">
             <SignupFormPage />
+          </Route>
+          <Route path="/answer">
+            <Answer />
           </Route>
           <Route path="/">
             <MainContent />

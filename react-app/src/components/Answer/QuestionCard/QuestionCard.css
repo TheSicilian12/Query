@@ -1,7 +1,6 @@
 .question-card-container{
     display: flex;
     flex-direction: column;
-    border-bottom: .1rem solid black;
 }
 .bottom-buttons{
     display: flex;

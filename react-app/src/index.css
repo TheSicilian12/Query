@@ -1,1 +1,68 @@
-/* TODO Add site wide styles */
+/* TODO Add site wide styles *//* TODO: 
+    -Add site wide styles 
+    -GLOBAL COLORS: 
+        -backgrounds, font, border, boxshadow
+*/
+*{
+    font-family: 'Courier Prime', monospace;
+    padding: 0;
+    margin: 0;
+}
+.content-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+}
+a:active{
+    color:gainsboro;
+    text-decoration: none;
+}
+a:hover{
+    background-color: rgba(220, 220, 220, 0.205);
+    border-radius: .23rem;
+    filter: brightness(90%);
+    cursor: pointer;
+}
+.oval-button{
+    border: .1rem solid blue;
+    color:blue;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 70rem;
+    padding: .5rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.oval-button:hover{
+    background-color: rgba(0, 0, 255, 0.014);
+    cursor: pointer;
+}
+.circle-button{
+    border: none;
+    color:black;
+    font-weight: 900;
+    font-size: 1.1rem;
+    border-radius: 70rem;
+    background-color: white;
+    padding: 1rem;
+    margin: 1rem;
+}
+.circle-button:hover{
+    background-color: rgba(0, 0, 0, 0.027);
+    cursor: pointer;
+}
+/* a:visited{
+    color:red
+} */
