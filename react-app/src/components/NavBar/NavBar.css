@@ -21,8 +21,32 @@
     align-items: center;
     justify-content: center;
 }
+.nav-section-three{
+position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
 .profile-dropdown {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
     position: absolute;
+    top: 100%;
+    right: 1;
+    border: 1rem solid red;
+    border-radius: .23rem;
+    padding: 1rem;
+}
+.bruh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login{
+    margin: 1rem;
 }
 .hidden {
     display: none;

@@ -52,6 +52,8 @@ const NavBar = ({ isLoaded }) => {
                         <i class="fas fa-search"></i>
                         <input type="text" />
                     </div>
+                </div>
+                <div className="nav-section-three">
                     {isLoaded && (
                         <ProfileButton user={sessionUser} />
                     )}
