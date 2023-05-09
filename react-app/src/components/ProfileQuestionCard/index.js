@@ -1,10 +1,10 @@
 import './QuestionCard.css'
-import { getUserAnswers } from '../../store/answer';
+import { getUserAnswers } from '../../../store/answer';
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react';
 import OpenModalButton from '../OpenModalButton';
 import EditQuestionModal from '../EditQuestionModal';
-import { getAllAnswers } from '../../store/answer';
+import { getAllAnswers } from '../../store/answer.js '
 
 const ProfileQuestionCard = ({ question, user }) => {
     const dispatch = useDispatch();

@@ -4,6 +4,7 @@ import './MainContent.css'
 import ContentCard from './CardComponents/ContentCard'
 // import SpaceCardArea from '../SpaceCardArea/'
 import { getAllQuestions } from '../../store/question';
+import SpaceCardArea from '../SpaceCardArea';
 
 // import {getUsers} from '../../store/users'
 // import { useParams } from 'react-router-dom';
@@ -21,7 +22,7 @@ const MainContent = () => {
     return(
         <div className="main-content-section">
             <div className="main-content-area">
-                {/* <SpaceCardArea spaces={spaces}></SpaceCardArea> */}
+                <SpaceCardArea></SpaceCardArea>
             </div>
             <div className="content-cards">
                 {

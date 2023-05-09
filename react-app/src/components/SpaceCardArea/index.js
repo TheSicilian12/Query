@@ -2,10 +2,10 @@ import './SpaceCardArea.css'
 import SpaceCard from './SpaceCard'
 import Footer from './Footer'
 
-const SpaceCardArea = ({spaces}) => {
+const SpaceCardArea = () => {
     return(
         <div className="space-cards-container">
-            {
+            {/* {
                 spaces.map(space => {
                     return (
                         <SpaceCard 
@@ -14,7 +14,8 @@ const SpaceCardArea = ({spaces}) => {
                         ></SpaceCard>
                     )
                 })
-            }
+            } */}
+            <SpaceCard></SpaceCard>
             <hr />
             <Footer></Footer>
         </div>
