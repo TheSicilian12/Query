@@ -2,8 +2,8 @@ import './ProfilePage.css'
 import { useSelector,useDispatch } from 'react-redux'
 import { useEffect} from 'react';
 import { getAllQuestions } from '../../store/question';
+// import ProfileQuestionCard from '../ProfileQuestionCard';
 import ProfileQuestionCard from '../ProfileQuestionCard';
-
 
 function ProfilePage() {
     const sessionUser = useSelector((state) => state.session.user);

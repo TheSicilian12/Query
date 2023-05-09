@@ -1,5 +1,4 @@
 import './QuestionCard.css'
-import { getUserAnswers } from '../../../store/answer';
 import { useSelector, useDispatch } from 'react-redux'
 import { useEffect, useState } from 'react';
 import OpenModalButton from '../OpenModalButton';
