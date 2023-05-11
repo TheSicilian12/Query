@@ -48,7 +48,8 @@ html{
     justify-content: center;
 }
 .oval-button:hover{
-    background-color: rgba(0, 0, 255, 0.014);
+    background-color: blue;
+    color: white;
     cursor: pointer;
 }
 .circle-button{
@@ -57,12 +58,13 @@ html{
     font-weight: 900;
     font-size: 1.1rem;
     border-radius: 70rem;
-    background-color: white;
+    background-color: whitesmoke;
     padding: 1rem;
     margin: 1rem;
 }
 .circle-button:hover{
-    background-color: rgba(0, 0, 0, 0.027);
+    /* background-color: white; */
+    box-shadow: 0px 0px 2px 2px black;
     cursor: pointer;
 }
 .button-order{

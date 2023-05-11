@@ -26,12 +26,6 @@
     align-items: center;
     justify-content: center;
 }
-.navbar-profile-button > button{
-    margin: 1vw;
-    padding: 10px;
-    border-radius: 10%;
-    border: 2px solid rgba(0, 0, 0, 0.372);
-}
 .navbar-profile-dropdown-container{
     position: relative;
 }
@@ -54,6 +48,22 @@
     padding-bottom: 20%;
     font-size: 16pt;
 }
-#profile-dropdown-logout-button > button{
+#profile-dropdown-logout-button {
     padding: 5px 50px;
+    border: .1rem solid red;
+    color:red;
+    font-weight: 900;
+    font-size: 1.1rem;
+    background-color: white;
+    border-radius: 70rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#profile-dropdown-logout-button:hover{
+    background-color: red;
+    color: white;
+    cursor: pointer;
 }

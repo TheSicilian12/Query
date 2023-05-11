@@ -10,26 +10,24 @@ import EditAnswerModal from '../EditAnswerModal';
 import DeleteReplyModal from '../DeleteReplyModal';
 import CreateReviewForm from '../CreateReplyForm';
 import { useModal } from '../../context/Modal';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SingleQuestion = () => {
-    const { questionId } = useParams();
-    const { closeModal } = useModal
     const dispatch = useDispatch();
+    const { questionId } = useParams();
+    const { closeModal } = useModal();
     const user = useSelector((state) => state.session.user)
     const answer = useSelector((state) => state.answers)
     const { question } = useSelector((state) => state.question.singleQuestion)
-    console.log("user", user);
-
-
 
     const [commentVisible, setCommentVisible] = useState(false)
-
 
     useEffect(() => {
         console.log("IT IS RENDERING!");
         dispatch(getOneQuestion(questionId))
     }, [dispatch, answer, questionId, closeModal])
 
+    if (!user) return <Redirect to="/login" />
 
     if (!question) return null;
 

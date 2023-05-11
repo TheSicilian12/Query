@@ -1,9 +1,18 @@
-import './following.css'
-import SpaceCardArea from '../SpaceCardArea'
-import DiscoverSpaceArea from './DiscoverSpacesArea'
-import ConditionalContent from '../ConditionalContent'
-import content from '../../assets/conditionalContent/following.json' 
+import './following.css';
+import SpaceCardArea from '../SpaceCardArea';
+import DiscoverSpaceArea from './DiscoverSpacesArea';
+import ConditionalContent from '../ConditionalContent';
+import content from '../../assets/conditionalContent/following.json';
+import { useSelector } from 'react-redux';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
+
+
+
 const Following = () => {
+    const sessionUser = useSelector((state) => state.session.user);
+
+    if (!sessionUser) return <Redirect to="/login" />
+
     return(
         <h1>feature coming soon!</h1>
             // <div className="following-parent-container">

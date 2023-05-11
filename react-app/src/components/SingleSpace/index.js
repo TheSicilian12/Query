@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { getOneSpace } from '../../store/space';
 import OpenModalButton from '../OpenModalButton';
-import { NavLink } from 'react-router-dom/cjs/react-router-dom.min';
+import { NavLink, Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 import DeleteSpaceModal from '../DeleteSpaceModal';
 import { getAllAnswers } from '../../store/answer';
 import CreateQuestionModal from '../CreateQuestionModal';
@@ -13,6 +13,7 @@ const SingleSpace = () => {
     const dispatch = useDispatch();
     const [isHidden, setIsHidden] = useState(true)
     const { spaceId } = useParams();
+    const sessionUser = useSelector((state) => state.session.user)
     const { space } = useSelector((state) => state.space.singleSpace)
     const answers = useSelector((state) => state.answer.answers)
     const answersArray = Object.values(answers)
@@ -26,9 +27,12 @@ const SingleSpace = () => {
         setIsHidden(!isHidden)
     }
 
-    let editQuestionTool = isHidden ? 'hidden' : 'edit-question-tooltip';
+    if (!sessionUser) return <Redirect to="/login" />
 
     if (!space) return null;
+
+    let editQuestionTool = isHidden ? 'hidden' : 'edit-question-tooltip';
+
 
     return (
         <div className='single-space-container'>
@@ -50,27 +54,28 @@ const SingleSpace = () => {
                         <i className="fas fa-ellipsis-h"></i>
                     </button>
                     <div className="edit-question-tooltip-container">
-                    <div className={editQuestionTool}>
-                        <button className='edit-space-placeholder'>
-                            Edit space
-                        </button>
-                        <OpenModalButton
-                            buttonText="Delete space"
-                            modalComponent={
-                                <DeleteSpaceModal
-                                    id={space.id}
-                                />
-                            }
-                        />
+                        <div className={editQuestionTool}>
+                            <button className='edit-space-placeholder'>
+                                Edit space
+                            </button>
+                            <OpenModalButton
+                                buttonText="Delete space"
+                                modalComponent={
+                                    <DeleteSpaceModal
+                                        id={space.id}
+                                    />
+                                }
+                            />
+                        </div>
                     </div>
                 </div>
-                </div>
-                <div className="add-space-question-button">
-                    <OpenModalButton
-                        buttonText="Add a Question to this Space"
-                        modalComponent={<CreateQuestionModal spaceId={spaceId} />}
-                    />
-                </div>
+            </div>
+            <div className="add-space-question-button">
+                <OpenModalButton
+                    buttonText="Add a Question to this Space"
+                    modalComponent={<CreateQuestionModal spaceId={spaceId} />}
+                    className="oval-button"
+                />
             </div>
             <div className='single-space-questions-container'>
                 {

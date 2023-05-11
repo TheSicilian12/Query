@@ -9,8 +9,6 @@ import CreateQuestionModal from '../CreateQuestionModal';
 const NavBar = ({ isLoaded }) => {
     const sessionUser = useSelector(state => state.session.user);
 
-    let index = 0;
-
     return(
         <div className="nav-container">
             <nav className="nav">
@@ -65,13 +63,17 @@ const NavBar = ({ isLoaded }) => {
                         <input type="text" />
                     </div>
                     {isLoaded && (
-                        <ProfileButton user={sessionUser} />
+                        <ProfileButton
+                            user={sessionUser}
+                            className="circle-button"
+                        />
                     )}
                     {
                         sessionUser &&
                         <OpenModalButton
                             buttonText="Add question"
                             modalComponent={<CreateQuestionModal />}
+                            className="oval-button"
                         />
                     }
                 </div>

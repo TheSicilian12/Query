@@ -27,17 +27,17 @@ const ProfileQuestionCard = ({ question, user }) => {
 
     return (
         <div className='profile-question-card-container'>
-            <div className="question-card-container">
+            <div className="profile-question-card">
                 <NavLink
                     to={`/questions/${question.id}`}
                 >
-                    <div className="question-card">
-                        <div className="question-text">
-                            <h3>{question.details}</h3>
+                    <div className="profile-question-card">
+                        <div className="profile-question-text">
+                        {question.details}
                         </div>
                     </div>
                 </NavLink>
-                <div className="question-answers">
+                <div className="profile-question-answers">
                     {questionAnswers.length ?
                         (questionAnswers.length === 1 ?
                             (

@@ -1,20 +1,28 @@
 .profile-question-card-container{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    /* width: 35vw; */
+    padding: 2%;
+    margin: 2%;
 }
 
-.question-card-container {
+.profile-question-card {
     display: flex;
     flex-direction: column;
-    /* border-bottom: .1rem solid black; */
+    width: 35vw;
 }
 
-/* .triangle {
-    position: absolute;
-    top: -.5rem;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid black;
-} */
+.profile-question-text {
+    font-size: 20pt;
+    padding-bottom: 4%;
+    word-wrap: break-word;
+}
+
+.profile-question-answers{
+    font-size: 15pt;
+}
 
 .edit-question-tooltip {
     background-color: rgb(255, 255, 255);

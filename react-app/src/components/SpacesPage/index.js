@@ -6,6 +6,7 @@ import { getAllSpaces } from '../../store/space';
 import CreateSpaceModal from '../CreateSpaceModal';
 import SpaceCard from '../SpaceCardArea/SpaceCard';
 import OpenModalButton from '../OpenModalButton';
+import { Redirect } from 'react-router-dom/cjs/react-router-dom.min';
 
 const SpacesPage = () => {
     const dispatch = useDispatch();
@@ -17,6 +18,8 @@ const SpacesPage = () => {
     useEffect(() => {
         dispatch(getAllSpaces())
     }, [dispatch])
+
+    if (!sessionUser) return <Redirect to="/login" />
 
     const handleClick = () => {
         alert('Feature coming soon')
@@ -34,6 +37,7 @@ const SpacesPage = () => {
                         <OpenModalButton
                             modalComponent={<CreateSpaceModal/>}
                             buttonText="Create a Space"
+                            className="oval-button"
                         />
                         <button
                             className="oval-button"

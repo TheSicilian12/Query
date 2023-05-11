@@ -23,7 +23,7 @@ const SpaceCardArea = ({user}) => {
                         <SpaceCard
                             id={space.id} 
                             name={space.name}
-                            image={space.image}
+                            image={space.imageUrl}
                         ></SpaceCard>
                     )
                 })

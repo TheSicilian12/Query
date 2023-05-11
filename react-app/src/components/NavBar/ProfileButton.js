@@ -50,7 +50,7 @@ function ProfileButton({ user }) {
   return (
     <>
       <div className="navbar-profile-button">
-        <button onClick={openMenu}>
+        <button className="circle-button" onClick={openMenu}>
           <i className="fas fa-user-circle" />
         </button>
       </div>
@@ -65,12 +65,16 @@ function ProfileButton({ user }) {
                   {user.username}
                 </NavLink>
               </div>
-              <div id="profile-dropdown-logout-button">
-                <button onClick={handleLogout}
-                >Log Out</button>
+              <div >
+                <button
+                 onClick={handleLogout}
+                 id="profile-dropdown-logout-button"
+                >
+                  Log Out
+                </button>
               </div>
             </div>
-          ) 
+          )
           // : (
           //   <>
           //     <OpenModalButton
@@ -87,7 +91,7 @@ function ProfileButton({ user }) {
           //     <button onClick={handleClick}>Demo User</button>
           //   </>
           // )
-          
+
           }
       </div>
     </>

@@ -11,6 +11,7 @@
     padding: .5rem;
     margin: .5rem;
     width: 100%;
+    overflow: hidden;
 }
 .space-card:hover{
     background-color: rgba(220, 220, 220, 0.205);
