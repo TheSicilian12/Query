@@ -20,7 +20,6 @@ function SplashPage() {
     return (
 
             <div className="splash-background">
-
                 <div className="splash-page-container white-background">
                     <h1 className="query quora-font">Query</h1>
                     <h2 className="mission-statement">A place to share knowledge and better understand the world</h2>

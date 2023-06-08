@@ -30,9 +30,9 @@ function LoginFormPage() {
             <li key={idx}>{error}</li>
           ))}
         </ul>
-        <label for="email">Email</label>
+        <label for="emailLogin">Email</label>
         <input
-          id="email"
+          id="emailLogin"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -40,9 +40,9 @@ function LoginFormPage() {
           required
         />
 
-        <label for="pwrd">Password</label>
+        <label for="pwrdLogin">Password</label>
         <input
-          id="pwrd"
+          id="pwrdLogin"
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
