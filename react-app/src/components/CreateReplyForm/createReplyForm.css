@@ -26,7 +26,11 @@
 }
 
 .reply-center-width{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* border: 2px solid green; */
     width: 40vw;
+    padding: 5px;
     /* box-sizing: border-box; */
 }
